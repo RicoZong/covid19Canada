@@ -1,0 +1,117 @@
+---
+title: "Introduction of covid19Canada Package"
+author: "Ruicong Zong"
+date: "`r format(Sys.time(), '%d %b %Y')`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+    number_sections: false
+vignette: >
+  %\VignetteIndexEntry{A tour of TestingPackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", 
+               out.width = "90%",
+               fig.width = 6, fig.height = 5.5,
+               dev.args=list(pointsize=10),
+               par = TRUE, # needed for setting hook 
+               collapse = TRUE, # collapse input & ouput code in chunks
+               warning = FALSE)
+knit_hooks$set(par = function(before, options, envir)
+  { if(before && options$fig.show != "none") 
+       par(family = "sans", mar=c(4.1,4.1,1.1,1.1), mgp=c(3,1,0), tcl=-0.5)
+})
+set.seed(1) # for exact reproducibility
+```
+       
+## Introduction
+
+`covid19Canada` is an R package to demonstrate and further analyzes Canadian COVID-19 infection and vaccination information extracted form covid19.analytics package. This includes the main components: DESCRIPTION, NAMESPACE, man subdirectory and R subdirectory. Additionally, licence, README and subdirectories vignettes, tests, data and inst are also explored. The package was developed using R version 4.1.1 and Mac platform. **This document gives a tour of covid19Canada (version 0.1.0)**. It was written in R Markdown, using the [knitr](https://cran.r-project.org/package=knitr) package for production. See `help(package = "TestingPackage")` for further details. 
+
+To download **TestingPackage**, use the following commands:
+
+``` r
+require("devtools")
+install_github("RicoZong/covid19Canada", build_vignettes = TRUE)
+library("covid19Canada")
+```
+To list all sample functions available in the package:
+``` r
+ls("package:covid19Canada")
+```
+
+To list all sample datasets available in the package:
+``` r
+data(package = "covid19Canada")
+```
+
+<br>
+
+## Components
+
+The minimal requirements of an R package is described, followed by other components that are required for the purpose of this course. 
+
+<div style="text-align:center"><img src="SILVA_A_A1.png" alt="SILVA_A_A1" width="500"/>
+
+<div style="text-align:left">
+
+### Minimal requirements
+
+* The **R subdirectory** within an R package contains all the R code files or script files. These are files ending with ".R". 
+
+* The **man subdirectory** contains help documentation for each function that is available to the user. Help files should be auto generated via *roxygen2* package based on the roxygen tags used in the .R files from R sub directory.
+
+* **DESCRIPTION** file contains metadata, including the package name, the version number, the author and maintainer contact information, along with other information.
+
+* **NAMESPACE** file provides a "context for looking up the value of an object associated with a name". This file will contain export(), import() and importFrom() statements. This file will be auto-updated via *roxygen2* package based on the roxygen tags used in the .R files from R subdirectory.
+
+### Other
+
+* **README** file mainly describes what the package does. For the purpose of this course, the following elements in order are required: 1. Description, 2. Installation, 3. Overview, 4. Contributions, 5. References, and 6. Acknowledgements. Any other content of student's choice should be placed after these six elements. 
+
+* **LICENSE** file describing who can use the R package. 
+
+* The **data** subdirectory with data (.rda) is included to demonstrate utility of functions in the package with this data. If data is included, proper documentation for data must be provided using data.R file. Including data in the R package, however, is optional. If not providing own data, must show examples with external datasets so user of the package can still understand utility of each function. 
+
+* The **tests** subdirectory includes the testthat subdirectory, which has test that are written to see if functions are working as expected. There should be unit tests and integration tests. 
+
+* The **vignettes** subdirectory permit to include vignettes that provide an overview of the R package.
+
+* The **inst** subdirectory contains other files and subdirectories. **CITATION** file should be included here. Other subdirectories may include extdata and shiny-scripts. The **extdata** subdirectory can include images included in README file. The **shiny-scripts** subdirectory should include shiny script files (app.R). 
+
+* The local project must be housed in a GitHub repository. There should be a record of the changes made to the package via Git commit messages. For the purpose of this course, ensure the **.Rproj** file is available on GitHub. Do NOT add it to .gitignore.
+
+<br>
+
+<div style="text-align:left">
+
+## Package References
+
+Ruicong, Z. (2021) covid19Canada: Canada Covid-19 Infection and
+  Vaccination Data and Analysis. Unpublished. URL
+  https://github.com/RicoZong/covid19Canada
+
+<br>
+
+## Other References
+
+Ponce et al. (2021). covid19.analytics: An R Package to Obtain,
+  Analyze and Visualize Data from the Coronavirus Disease Pandemic.
+  Journal of Open Source Software, 6(59), 2995.
+  https://doi.org/10.21105/joss.02995
+  
+
+
+R Core Team (2021). R: A language and environment for statistical
+  computing. R Foundation for Statistical Computing, Vienna,
+  Austria. URL https://www.R-project.org/.
+
+----
+
+```{r}
+sessionInfo()
+```

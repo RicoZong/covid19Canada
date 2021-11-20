@@ -1,0 +1,12 @@
+citHeader("To cite covid19Canada in publications use:")
+
+citEntry(
+  entry    = "Unpublished",
+  title    = "Canada Covid-19 Infection and Vaccination Data and Analysis" ,
+  author   = "Ruicong Zong",
+  note     = "Unpublished",
+  year     = "2021",
+  textVersion = paste("Ruicong, Z. (2021) covid19Canada: Canada Covid-19 Infection and Vaccination Data and Analysis. Unpublished. URL https://github.com/RicoZong/covid19Canada"
+
+  )
+)
