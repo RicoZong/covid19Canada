@@ -41,7 +41,7 @@ CanadaInfection
 # Example 4:
 #Use the function with both arguments.
 
-CanadaInfection <- InfectionCanada("01-01-2020", "Ontario")
+CanadaInfection <- InfectionCanada("01-01-2021", "Ontario")
 CanadaInfection
 
 }
