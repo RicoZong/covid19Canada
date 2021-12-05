@@ -20,12 +20,12 @@
 #' #Use the function only with the first argument.
 #'
 #' CanadaInfection <- InfectionCanada("01-01-2021")
-#'CanadaInfection
+#' CanadaInfection
 #'
 #' # Example 3:
 #' #Use the function only with the second argument.
 #'
-#' CanadaInfection <- InfectionCanada("Ontario")
+#' CanadaInfection <- InfectionCanada(, "Ontario")
 #' CanadaInfection
 #'
 #' # Example 4:

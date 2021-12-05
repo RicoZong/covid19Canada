@@ -35,7 +35,7 @@ CanadaInfection
 # Example 3:
 #Use the function only with the second argument.
 
-CanadaInfection <- InfectionCanada("Ontario")
+CanadaInfection <- InfectionCanada(, "Ontario")
 CanadaInfection
 
 # Example 4:
