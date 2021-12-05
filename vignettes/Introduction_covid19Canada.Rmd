@@ -55,7 +55,7 @@ data(package = "covid19Canada")
 
 The minimal requirements of an R package is described, followed by other components that are required for the purpose of this course. 
 
-<div style="text-align:center"><img src="SILVA_A_A1.png" alt="SILVA_A_A1" width="500"/>
+<div style="text-align:center"><img src="covid19Canada.png" alt="covid19Canada" width="500"/>
 
 <div style="text-align:left">
 

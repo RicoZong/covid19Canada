@@ -33,18 +33,17 @@ ls("package:covid19Canada")
 data(package = "covid19Canada") # optional
 ```
 
-`TestingPackage` contains 3 functions to demonstrate and further
-analyzes Canadian COVID-19 infection and vaccination information
-extracted form covid19.analytics package. The *InfectionCanada* is
-function that demonstrates the COVID-19 infection data in Canada.User
-can enter the date of interest and interested province as the arguments
-to better analyze Canadian COVID-19 infections.The *InfeVacPlot*
-function that generates the plotting demonstrating the correlation of
-COVID-19 vaccination and infection in Canada. *VaccinationCanada* A
-function that demonstrates the COVID-19 vaccination data in Canada. User
-is able to enter the date of interested to look up the vaccination data
-of Canada on that specific date. Refer to package vignettes for more
-details.
+`covid19Canada` contains 3 functions to demonstrate and further analyzes
+Canadian COVID-19 infection and vaccination information extracted form
+covid19.analytics package. The *InfectionCanada* is function that
+demonstrates the COVID-19 infection data in Canada.User can enter the
+date of interest and interested province as the arguments to better
+analyze Canadian COVID-19 infections.The *InfeVacPlot* function that
+generates the plotting demonstrating the correlation of COVID-19
+vaccination and infection in Canada. *VaccinationCanada* A function that
+demonstrates the COVID-19 vaccination data in Canada. User is able to
+enter the date of interested to look up the vaccination data of Canada
+on that specific date. Refer to package vignettes for more details.
 
 ``` r
 browseVignettes("covid19Canada")
@@ -52,7 +51,7 @@ browseVignettes("covid19Canada")
 
 An overview of the package is illustrated below.
 
-![](./inst/extdata/SILVA_A_A1.png)
+![](./inst/extdata/covid19Canada.png)
 
 ## Contributions
 
