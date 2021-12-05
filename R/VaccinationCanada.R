@@ -4,7 +4,7 @@
 #' is able to enter the date of interested to look up the vaccination data of
 #' Canada on that specific date.
 #'
-#' @param dateOfInterest The string indicates the date of interest.
+#' @param dateOfInterest The string indicates the date of interest.(year-mongth-day)
 #'
 #' @return Returns a data frame with 16 different columns that each indicates COVID-19 vaccination related counts.
 #'
