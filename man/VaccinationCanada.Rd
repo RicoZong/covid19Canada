@@ -4,7 +4,7 @@
 \alias{VaccinationCanada}
 \title{Canada COVID-19 Vaccination Count}
 \usage{
-VaccinationCanada(dateOfInterest)
+VaccinationCanada(dateOfInterest = "none")
 }
 \arguments{
 \item{dateOfInterest}{The string indicates the date of interest.(year-mongth-day)}
@@ -19,9 +19,9 @@ Canada on that specific date.
 }
 \examples{
 # Example 1:
-#Use the function without arguments.
+#Use the function with arguments "all" demonstrates all the vaccination info.
 
-covidVaccination <- VaccinationCanada()
+covidVaccination <- VaccinationCanada("all")
 covidVaccination
 
 # Example 2:

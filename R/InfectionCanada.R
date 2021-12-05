@@ -13,7 +13,7 @@
 #' # Example 1:
 #' #Use the function without arguments "all" that generates the entire Canadian infection data.
 #'
-#' CanadaInfection <- InfectionCanada()
+#' CanadaInfection <- InfectionCanada("all")
 #' CanadaInfection
 #'
 #' # Example 2:
@@ -41,17 +41,17 @@
 #'
 #' @export
 #' @import covid19.analytics
-InfectionCanada <- function(dateOfInterest, province){
+InfectionCanada <- function(dateOfInterest = "none", province = "none"){
   canadaInfectionData <- covid19.analytics::covid19.Canada.data()
-  if(dateOfInterest == "all"){
+  if(dateOfInterest == "all" && province == "none"){
     result <- canadaInfectionData
     return(result)
   }
-  if(missing(dateOfInterest)){
+  if(dateOfInterest == "none"){
     result <- subset(canadaInfectionData, grepl(province, prname))
     return(result)
   }
-  if(missing(province)){
+  if(province == "none"){
     result <-  subset(canadaInfectionData, grepl(dateOfInterest,date))
     return(result)
   }

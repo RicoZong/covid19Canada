@@ -4,7 +4,7 @@
 \alias{InfectionCanada}
 \title{Canada COVID-19 Infection Count}
 \usage{
-InfectionCanada(dateOfInterest, province)
+InfectionCanada(dateOfInterest = "none", province = "none")
 }
 \arguments{
 \item{dateOfInterest}{The string indicates the date of interest(day-month-year)}
@@ -23,7 +23,7 @@ analyze Canadian COVID-19 infections.
 # Example 1:
 #Use the function without arguments "all" that generates the entire Canadian infection data.
 
-CanadaInfection <- InfectionCanada()
+CanadaInfection <- InfectionCanada("all")
 CanadaInfection
 
 # Example 2:

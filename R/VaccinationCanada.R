@@ -10,9 +10,9 @@
 #'
 #'@examples
 #' # Example 1:
-#' #Use the function without arguments.
+#' #Use the function with arguments "all" demonstrates all the vaccination info.
 #'
-#' covidVaccination <- VaccinationCanada()
+#' covidVaccination <- VaccinationCanada("all")
 #' covidVaccination
 #'
 #' # Example 2:
@@ -28,10 +28,10 @@
 #'
 #' @export
 #' @import covid19.analytics
-VaccinationCanada <- function(dateOfInterest){
+VaccinationCanada <- function(dateOfInterest = "none"){
   globalVaccination <- covid19.analytics::covid19.vaccination(tgt = "global")
   canadaVaccination <- subset(globalVaccination, grepl("Canada", location))
-  if(missing(dateOfInterest)){
+  if(dateOfInterest == "all"){
     result <- canadaVaccination
     return(result)
   }
