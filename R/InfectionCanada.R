@@ -11,7 +11,7 @@
 #'
 #'@examples
 #' # Example 1:
-#' #Use the function without arguments.
+#' #Use the function without arguments "all" that generates the entire Canadian infection data.
 #'
 #' CanadaInfection <- InfectionCanada()
 #' CanadaInfection
@@ -43,7 +43,7 @@
 #' @import covid19.analytics
 InfectionCanada <- function(dateOfInterest, province){
   canadaInfectionData <- covid19.analytics::covid19.Canada.data()
-  if(missing(dateOfInterest) & missing(province)){
+  if(dateOfInterest == "all"){
     result <- canadaInfectionData
     return(result)
   }

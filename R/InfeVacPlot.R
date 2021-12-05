@@ -35,7 +35,7 @@ InfeVacPlot <- function(){
   dailyDeath <- canadaInfectionTotal$numdeathstoday
   #numofInfec <- canadaInfectionTotal$numconf
   #numofDeath <- canadaInfectionTotal$numdeaths
-  blankSpace <- c(rep(0,294))
+  blankSpace <- c(rep(0,293))
   vacPeople <- c(blankSpace,vacPeople)
   #fullVacPeople <- c(blankSpace,fullVacPeople)
 
@@ -50,7 +50,7 @@ InfeVacPlot <- function(){
          c("Dailyinfect","Dailydeath"),
          fill=c("blue","red")
   )
-  return()
+  return(invisible(NULL))
 
 }
 
