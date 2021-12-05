@@ -30,7 +30,7 @@ set.seed(1) # for exact reproducibility
        
 ## Introduction
 
-`covid19Canada` is an R package to demonstrate and further analyzes Canadian COVID-19 infection and vaccination information extracted form covid19.analytics package. This includes the main components: DESCRIPTION, NAMESPACE, man subdirectory and R subdirectory. Additionally, licence, README and subdirectories vignettes, tests, data and inst are also explored. The package was developed using R version 4.1.1 and Mac platform. **This document gives a tour of covid19Canada (version 0.1.0)**. It was written in R Markdown, using the [knitr](https://cran.r-project.org/package=knitr) package for production. See `help(package = "TestingPackage")` for further details. 
+`covid19Canada` is an R package to demonstrate and further analyzes Canadian COVID-19 infection and vaccination information extracted from covid19.analytics package. This includes the main components: DESCRIPTION, NAMESPACE, man subdirectory and R subdirectory. Additionally, licence, README and subdirectories vignettes, tests, data and inst are also explored. The package was developed using R version 4.1.1 and Mac platform. **This document gives a tour of covid19Canada (version 0.1.0)**. It was written in R Markdown, using the [knitr](https://cran.r-project.org/package=knitr) package for production. See `help(package = "TestingPackage")` for further details. 
 
 To download **TestingPackage**, use the following commands:
 

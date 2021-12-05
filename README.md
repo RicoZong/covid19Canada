@@ -9,7 +9,7 @@
 ## Description
 
 `covid19Canada` is an R package to demonstrate and further analyzes
-Canadian COVID-19 infection and vaccination information extracted form
+Canadian COVID-19 infection and vaccination information extracted from
 covid19.analytics package. This includes the main components:
 DESCRIPTION, NAMESPACE, man subdirectory and R subdirectory.
 Additionally, licence, README and subdirectories vignettes, tests, data
@@ -34,7 +34,7 @@ data(package = "covid19Canada") # optional
 ```
 
 `covid19Canada` contains 3 functions to demonstrate and further analyzes
-Canadian COVID-19 infection and vaccination information extracted form
+Canadian COVID-19 infection and vaccination information extracted from
 covid19.analytics package. The *InfectionCanada* is function that
 demonstrates the COVID-19 infection data in Canada.User can enter the
 date of interest and interested province as the arguments to better
