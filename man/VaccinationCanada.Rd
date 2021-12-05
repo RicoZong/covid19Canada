@@ -7,7 +7,7 @@
 VaccinationCanada(dateOfInterest)
 }
 \arguments{
-\item{dateOfInterest}{The string indicates the date of interest.}
+\item{dateOfInterest}{The string indicates the date of interest.(year-mongth-day)}
 }
 \value{
 Returns a data frame with 16 different columns that each indicates COVID-19 vaccination related counts.

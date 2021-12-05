@@ -7,7 +7,7 @@
 InfectionCanada(dateOfInterest, province)
 }
 \arguments{
-\item{dateOfInterest}{The string indicates the date of interest.}
+\item{dateOfInterest}{The string indicates the date of interest(day-month-year)}
 
 \item{province}{The string that indicates the province of interest in Canada.}
 }
@@ -15,13 +15,13 @@ InfectionCanada(dateOfInterest, province)
 Returns a data frame with 40 different columns that each indicates COVID-19 related counts.
 }
 \description{
-Fnction that demonstrates the COVID-19 infection data in Canada.User can
+Function that demonstrates the COVID-19 infection data in Canada. User can
 enter the date of interest and interested province as the arguments to better
 analyze Canadian COVID-19 infections.
 }
 \examples{
 # Example 1:
-#Use the function without arguments.
+#Use the function without arguments "all" that generates the entire Canadian infection data.
 
 CanadaInfection <- InfectionCanada()
 CanadaInfection
