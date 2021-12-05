@@ -18,7 +18,7 @@
 #' # Example 2:
 #' #Use the function only with the one argument.
 #'
-#' covidVaccination <- VaccinationCanada("2020-01-01")
+#' covidVaccination <- VaccinationCanada("2021-01-01")
 #' covidVaccination
 #'
 #' @references
