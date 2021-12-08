@@ -26,6 +26,12 @@ devtools::install_github("RicoZong/covid19Canada", build_vignettes = TRUE)
 library("covid19Canada")
 ```
 
+To run the Shiny app:
+
+``` r
+runTestingPackage()
+```
+
 ## Overview
 
 ``` r

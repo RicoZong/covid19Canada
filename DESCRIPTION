@@ -10,14 +10,15 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
 Depends: 
-    R (>= 3.1.0),
-    covid19.analytics,
-    reshape,
-    tidyverse,
-    ggplot2
+    R (>= 3.1.0)
 Suggests: 
     rmarkdown,
     knitr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+Imports: 
+    reshape,
+    covid19.analytics,
+    shiny,
+    ggplot2
