@@ -7,7 +7,7 @@
 InfectionCanada(dateOfInterest = "none", province = "none")
 }
 \arguments{
-\item{dateOfInterest}{The string indicates the date of interest(day-month-year)}
+\item{dateOfInterest}{The string indicates the date of interest(dd-mm-yyyy)}
 
 \item{province}{The string that indicates the province of interest in Canada.}
 }

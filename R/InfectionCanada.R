@@ -4,7 +4,7 @@
 #' enter the date of interest and interested province as the arguments to better
 #' analyze Canadian COVID-19 infections.
 #'
-#' @param dateOfInterest The string indicates the date of interest(day-month-year)
+#' @param dateOfInterest The string indicates the date of interest(dd-mm-yyyy)
 #' @param province The string that indicates the province of interest in Canada.
 #'
 #' @return Returns a data frame with 40 different columns that each indicates COVID-19 related counts.

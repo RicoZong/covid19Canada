@@ -1,6 +1,6 @@
 Package: covid19Canada
 Type: Package
-Title: Canada Covid-19 Infection and Vaccination Data and Analysis 
+Title: Canada Covid-19 Infection and Vaccination Data Analysis 
 Version: 0.1.0
 Author: person("Ruicong", "Zong", email = "ruicong.zong@utoronto.ca", role = c("aut", "cre"))
 Maintainer: Ruicong Zong <ruicong.zong@mail.utoronto.ca>

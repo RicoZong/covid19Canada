@@ -29,7 +29,7 @@ library("covid19Canada")
 To run the Shiny app:
 
 ``` r
-runTestingPackage()
+runcovid19Canada()
 ```
 
 ## Overview
