@@ -91,12 +91,12 @@ InfeVacPlot <- function(vacPeopleNum = FALSE,
   date <- as.Date(meltData$date, "%d-%m-%Y")
   meltData$date <- date
 
-  ggplot2::ggplot(meltData, aes(x = date, y = value, color = variable, group = variable)) +
+  result <- ggplot2::ggplot(meltData, aes(x = date, y = value, color = variable, group = variable)) +
     geom_line() +
     labs(x = "Date",  y = "Number of people")+
     scale_x_date(date_labels = "%m-%Y")+
     ggtitle("Line plot of Vaccination and Infection in Canada")
-  return(invisible(NULL))
+  return(result)
 
 }
 
