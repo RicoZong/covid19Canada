@@ -21,7 +21,7 @@ representing the number of daily infection in the line plot.}
 representing the number of daily death in the line plot.}
 }
 \value{
-Returns a plot that demonstrates the correlation of
+Returns a line plot that demonstrates the correlation of
 COVID-19 vaccination(vaccinated & fully vaccinated) and
 infection(infection & death) in Canada.
 }

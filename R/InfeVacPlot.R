@@ -10,7 +10,7 @@
 #' @param dailyDeathNum the Boolean indicates whether to include the line
 #' representing the number of daily death in the line plot.
 #'
-#' @return Returns a plot that demonstrates the correlation of
+#' @return Returns a line plot that demonstrates the correlation of
 #' COVID-19 vaccination(vaccinated & fully vaccinated) and
 #' infection(infection & death) in Canada.
 #'
@@ -95,7 +95,8 @@ InfeVacPlot <- function(vacPeopleNum = FALSE,
     geom_line() +
     labs(x = "Date",  y = "Number of people")+
     scale_x_date(date_labels = "%m-%Y")+
-    ggtitle("Line plot of Vaccination and Infection in Canada")
+    ggtitle("Line plot of Vaccination and Infection in Canada")+
+    theme_bw()
   return(result)
 
 }
