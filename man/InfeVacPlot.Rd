@@ -4,18 +4,50 @@
 \alias{InfeVacPlot}
 \title{Vaccination and Infection Plotting}
 \usage{
-InfeVacPlot()
+InfeVacPlot(
+  vacPeopleNum = FALSE,
+  dailyInfectNum = FALSE,
+  dailyDeathNum = FALSE
+)
+}
+\arguments{
+\item{vacPeopleNum}{the Boolean indicates whether to include the line
+representing the number of total vaccinated people in the line plot.}
+
+\item{dailyInfectNum}{the Boolean indicates whether to include the line
+representing the number of daily infection in the line plot.}
+
+\item{dailyDeathNum}{the Boolean indicates whether to include the line
+representing the number of daily death in the line plot.}
 }
 \value{
-Returns a plotting that demonstrates the correlation of
-COVID-19 vaccination(vaccinated & fully vaccinated)and infection in Canada.
+Returns a plot that demonstrates the correlation of
+COVID-19 vaccination(vaccinated & fully vaccinated) and
+infection(infection & death) in Canada.
 }
 \description{
 A function that generates the plotting demonstrating the correlation of
 COVID-19 vaccination and infection in Canada.
 }
 \examples{
-InfeVacPlot()
+#Example 1:
+#Generate the plot with only one line representing the number of vaccinated
+#people.
+
+InfeVacPlot(TRUE)
+
+#Example 2:
+#Generate the plot with two lines representing the number of total vaccinated
+#people and daily death respectively.
+
+InfeVacPlot(TRUE, FALSE, TRUE)
+
+#Example 2:
+#Generate the plot with three lines representing the number of total
+#vaccinated people，daily infected and daily death.
+
+InfeVacPlot(TRUE, TRUE, TRUE)
+
 
 }
 \references{
@@ -27,4 +59,12 @@ R Core Team (2021). R: A language and
 environment for statistical computing. R
 Foundation for Statistical Computing, Vienna,
 Austria. URL https://www.R-project.org/.
+
+Wickham et al., (2019). Welcome to the tidyverse.
+Journal of Open Source Software, 4(43), 1686,
+https://doi.org/10.21105/joss.01686
+
+H. Wickham. Reshaping data with the reshape
+package. Journal of Statistical Software, 21(12),
+2007.
 }

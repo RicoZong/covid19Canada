@@ -9,7 +9,7 @@
 #'
 #' @return Returns a data frame with 40 different columns that each indicates COVID-19 related counts.
 #'
-#'@examples
+#' @examples
 #' # Example 1:
 #' #Use the function without arguments "all" that generates the entire Canadian infection data.
 #'
