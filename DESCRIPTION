@@ -9,9 +9,11 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
-Depends: R (>= 3.1.0)
-Imports: 
-    covid19.analytics
+Depends: 
+    R (>= 3.1.0),
+    covid19.analytics,
+    reshape,
+    tidyverse
 Suggests: 
     rmarkdown,
     knitr,

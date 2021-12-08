@@ -61,11 +61,12 @@ function makes use of covid19.Canada.data function from
 COVD-19 infection data. *InfeVacPlot* function makes use of
 covid19.Canada.data and covid19.vaccination functions from
 `covid19.analytics` R package to get both vaccination and infection
-datas. It also uses plot function from `graphics` R package to generate
-a plottings. The *Vaccinationanada* makes use of covid19.vaccination
-from the `covid19.analytics` R package to get vacciniation data.
-(Section of the borrowed code is clearly indicated and referenced in the
-InfectionCanada, InfeVacPlot and VaccinationCanada help file)
+data. It also uses plot function from `tidyverse` and `reshape` R
+package to generate plotting. The *Vaccinationanada* makes use of
+covid19.vaccination from the `covid19.analytics` R package to get
+vaccination data. (Section of the borrowed code is clearly indicated and
+referenced in the InfectionCanada, InfeVacPlot and VaccinationCanada
+help file)
 
 ## References
 
@@ -76,6 +77,12 @@ Open Source Software, 6(59), 2995. <https://doi.org/10.21105/joss.02995>
 R Core Team (2021). R: A language and environment for statistical
 computing. R Foundation for Statistical Computing, Vienna,Austria. URL
 <https://www.R-project.org/>.
+
+Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source
+Software, 4(43), 1686, <https://doi.org/10.21105/joss.01686>
+
+H. Wickham. Reshaping data with the reshape package. Journal of
+Statistical Software, 21(12), 2007.
 
 ## Acknowledgements
 
