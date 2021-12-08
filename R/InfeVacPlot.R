@@ -60,7 +60,7 @@
 InfeVacPlot <- function(vacPeopleNum = FALSE,
                         dailyInfectNum = FALSE,
                         dailyDeathNum = FALSE){
-  if(vacPeopleNum == FALSE & dailyInfectNum & FALSE & dailyDeathNum == FALSE){
+  if(vacPeopleNum == FALSE & dailyInfectNum == FALSE & dailyDeathNum == FALSE){
     stop("Need at least one input")}
 
   canadaInfectionData <- covid19.analytics::covid19.Canada.data()
