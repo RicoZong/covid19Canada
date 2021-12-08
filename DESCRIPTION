@@ -13,7 +13,8 @@ Depends:
     R (>= 3.1.0),
     covid19.analytics,
     reshape,
-    tidyverse
+    tidyverse,
+    ggplot2
 Suggests: 
     rmarkdown,
     knitr,

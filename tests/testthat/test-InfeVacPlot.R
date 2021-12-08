@@ -3,9 +3,9 @@ library(covid19Canada)
 
 test_that("function generates the correct data and plot", {
 
-  plot <- InfeVacPlot()
+  plot <- InfeVacPlot(TRUE)
 
-  expect_type(plot, "NULL")
+  expect_type(plot, "list" )
 })
 # [END]
 

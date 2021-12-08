@@ -51,6 +51,13 @@ InfeVacPlot(TRUE, TRUE, TRUE)
 
 }
 \references{
+H. Wickham. Reshaping data with the reshape
+package. Journal of Statistical Software, 21(12),
+2007.
+
+H. Wickham. ggplot2: Elegant Graphics for Data Analysis.
+Springer-Verlag New York, 2016.
+
 Ponce et al. (2021). covid19.analytics: An R Package to Obtain, Analyze and
 Visualize Data from the Coronavirus Disease Pandemic. Journal of Open Source
 Software, 6(59), 2995. https://doi.org/10.21105/joss.02995
@@ -63,8 +70,4 @@ Austria. URL https://www.R-project.org/.
 Wickham et al., (2019). Welcome to the tidyverse.
 Journal of Open Source Software, 4(43), 1686,
 https://doi.org/10.21105/joss.01686
-
-H. Wickham. Reshaping data with the reshape
-package. Journal of Statistical Software, 21(12),
-2007.
 }
