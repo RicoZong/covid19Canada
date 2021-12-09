@@ -1,6 +1,5 @@
 library(shiny)
 
-
 ui = fluidPage(
 
   titlePanel(tags$h1(tags$b("covid19Canada:"),"Canada Covid-19 Infection and Vaccination Data Analysis")),
