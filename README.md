@@ -32,6 +32,8 @@ To run the Shiny app:
 runcovid19Canada()
 ```
 
+![](./inst/extdata/shiny.png)
+
 ## Overview
 
 ``` r

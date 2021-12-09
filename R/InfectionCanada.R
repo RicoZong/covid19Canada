@@ -45,20 +45,16 @@ InfectionCanada <- function(dateOfInterest = "none", province = "none"){
   canadaInfectionData <- covid19.analytics::covid19.Canada.data()
   if(dateOfInterest == "none" && province == "none"){
     stop("Need arguments")
-  }
-  if(dateOfInterest == "all" && province == "none"){
-    result <- canadaInfectionData
-    return(result)
-  }
-  if(dateOfInterest == "none"){
+  }else if(dateOfInterest == "none"){
     result <- subset(canadaInfectionData, grepl(province, prname))
     return(result)
-  }
-  if(province == "none"){
+  }else if(province == "none"){
     result <-  subset(canadaInfectionData, grepl(dateOfInterest,date))
     return(result)
-  }
-  else {
+  }else if(dateOfInterest == "all" && province == "all"){
+    result <- canadaInfectionData
+    return(result)
+  }else {
     preresult <- subset(canadaInfectionData, grepl(dateOfInterest, date))
     result <- subset(preresult, grepl(province, prname))
     return(result)

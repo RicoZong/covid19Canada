@@ -20,12 +20,12 @@ ui = fluidPage(
       tags$p("1.Enter the date of interest (dd-mm-yyyy) or/and the province of
              interest tosee the infection data (enter 'all' to see the entire
              Canadian infection data)"),
-             textInput("dateOfInterestInfect", "Date of interest"),
-             textInput("province", "Province of interest"),
+             textAreaInput("dateOfInterestInfect", "Date of interest"),
+             textAreaInput("province", "Province of interest" ),
 
       tags$p("2.Enter the date of interest (yyyy-mm-dd) to see the vaccination
              data (enter 'all' to see the entire Canadian vaccination data)"),
-             textInput("dateOfInterestVac", "Date of interest"),
+             textAreaInput("dateOfInterestVac", "Date of interest" ),
 
 
 
@@ -39,7 +39,7 @@ ui = fluidPage(
       checkboxInput(inputId = "dailyDeathNum",
                     "Number of daily death",
                     FALSE),
-      actionButton("go", "Go"),
+      actionButton("start", "Start"),
     ),
 
     mainPanel(
@@ -53,18 +53,18 @@ ui = fluidPage(
 
 server = function(input, output) {
 
-  v <- reactiveValues(doPlot = FALSE)
+  v <- reactiveValues(dothing = FALSE)
 
-  observeEvent(input$go, {
-    v$doPlot <- input$go
+  observeEvent(input$start, {
+    v$dothing <- input$start
   })
 
   observeEvent(input$tabset, {
-    v$doPlot <- FALSE
+    v$dothing <- FALSE
   })
 
   output$InfectTable <- renderDataTable({
-    if (v$doPlot == FALSE) return()
+    if (v$dothing == FALSE) return(NULL)
     else{
     covid19Canada::InfectionCanada(input$dateOfInterestInfect,
                                    input$province)
@@ -72,13 +72,19 @@ server = function(input, output) {
   })
 
   output$VacTable <- renderDataTable({
+    if (v$dothing == FALSE) return(NULL)
+    else{
     covid19Canada::VaccinationCanada(input$dateOfInterestVac)
+    }
   })
 
   output$plot <- renderPlot({
+    if (v$dothing == FALSE) return()
+    else{
     covid19Canada::InfeVacPlot(input$vacPeopleNum,
                                input$dailyInfectNum,
                                input$dailyDeathNum)
+    }
   })
 
 }
