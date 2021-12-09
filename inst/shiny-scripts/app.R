@@ -17,13 +17,14 @@ ui = fluidPage(
 
 
       tags$p("1.Enter the date of interest (dd-mm-yyyy) or/and the province of
-             interest tosee the infection data (enter 'all' to see the entire
-             Canadian infection data)"),
+             interest tosee the infection data (blank argument will show up the
+             entire Canadian infection data)"),
              textAreaInput("dateOfInterestInfect", "Date of interest"),
              textAreaInput("province", "Province of interest" ),
 
       tags$p("2.Enter the date of interest (yyyy-mm-dd) to see the vaccination
-             data (enter 'all' to see the entire Canadian vaccination data)"),
+             data (blank argument will show up the entire Canadian vaccination
+             data)"),
              textAreaInput("dateOfInterestVac", "Date of interest" ),
 
 
