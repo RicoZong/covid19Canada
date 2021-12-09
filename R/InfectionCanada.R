@@ -43,6 +43,9 @@
 #' @import covid19.analytics
 InfectionCanada <- function(dateOfInterest = "none", province = "none"){
   canadaInfectionData <- covid19.analytics::covid19.Canada.data()
+  if(dateOfInterest == "none" && province == "none"){
+    stop("Need arguments")
+  }
   if(dateOfInterest == "all" && province == "none"){
     result <- canadaInfectionData
     return(result)

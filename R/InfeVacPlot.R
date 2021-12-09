@@ -99,7 +99,7 @@ InfeVacPlot <- function(vacPeopleNum = FALSE,
     geom_line() +
     labs(x = "Date",  y = "Number of people")+
     scale_x_date(date_labels = "%m-%Y")+
-    ggtitle("Line plot of Vaccination and Infection in Canada")+
+    ggtitle("Line plot of Vaccination and Infection in Canada from 2020-01-31 to Today")+
     theme_bw()
   return(result)
 

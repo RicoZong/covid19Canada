@@ -106,6 +106,11 @@ R Core Team (2021). R: A language and environment for statistical computing. R F
 
 Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, https://doi.org/10.21105/joss.01686
 
+Winston Chang, Joe Cheng, JJ Allaire, Carson Sievert, Barret Schloerke, Yihui Xie, Jeff Allen, Jonathan
+  McPherson, Alan Dipert and Barbara Borges (2021). shiny: Web Application Framework for R. R package version
+  1.7.1. https://CRAN.R-project.org/package=shiny
+  
+
 ----
 
 ```{r}

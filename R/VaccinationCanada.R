@@ -8,7 +8,7 @@
 #'
 #' @return Returns a data frame with 16 different columns that each indicates COVID-19 vaccination related counts.
 #'
-#'@examples
+#' @examples
 #' # Example 1:
 #' #Use the function with arguments "all" demonstrates all the vaccination info.
 #'
@@ -31,6 +31,9 @@
 VaccinationCanada <- function(dateOfInterest = "none"){
   globalVaccination <- covid19.analytics::covid19.vaccination(tgt = "global")
   canadaVaccination <- subset(globalVaccination, grepl("Canada", location))
+  if(dateOfInterest == "none"){
+    stop("Need argument")
+  }
   if(dateOfInterest == "all"){
     result <- canadaVaccination
     return(result)

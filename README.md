@@ -93,6 +93,11 @@ computing. R Foundation for Statistical Computing, Vienna, Austria. URL
 Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source
 Software, 4(43), 1686, <https://doi.org/10.21105/joss.01686>
 
+Winston Chang, Joe Cheng, JJ Allaire, Carson Sievert, Barret Schloerke,
+Yihui Xie, Jeff Allen, Jonathan McPherson, Alan Dipert and Barbara
+Borges (2021). shiny: Web Application Framework for R. R package version
+1.7.1. <https://CRAN.R-project.org/package=shiny>
+
 ## Acknowledgements
 
 This package was developed as part of an assessment for 2021 BCB410H:
