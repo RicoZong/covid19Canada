@@ -21,4 +21,5 @@ Imports:
     reshape,
     covid19.analytics,
     shiny,
-    ggplot2
+    ggplot2,
+    tidyverse

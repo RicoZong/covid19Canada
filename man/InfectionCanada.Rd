@@ -23,7 +23,7 @@ analyze Canadian COVID-19 infections.
 # Example 1:
 #Use the function without arguments "all" that generates the entire Canadian infection data.
 
-CanadaInfection <- InfectionCanada("all")
+CanadaInfection <- InfectionCanada("all", "all")
 CanadaInfection
 
 # Example 2:
