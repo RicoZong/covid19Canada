@@ -1,6 +1,6 @@
 #' Launch Shiny App for covid19Canada
 #'
-#' A function that launches the Shiny app for covid19Canada.
+#' A function that launches the Shiny app for covid19Canada
 #' The purpose of this app is only to illustrate how a Shiny
 #' app works. The code has been placed in \code{./inst/shiny-scripts}.
 #'
@@ -18,7 +18,7 @@
 #' @export
 #' @importFrom shiny runApp
 
-runTestingPackage <- function() {
+runcovid19Canada <- function() {
   appDir <- system.file("shiny-scripts",
                         package = "covid19Canada")
   shiny::runApp(appDir, display.mode = "normal")

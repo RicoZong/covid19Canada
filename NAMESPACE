@@ -3,7 +3,7 @@
 export(InfeVacPlot)
 export(InfectionCanada)
 export(VaccinationCanada)
-export(runTestingPackage)
+export(runcovid19Canada)
 import(covid19.analytics)
 import(ggplot2)
 import(graphics)
